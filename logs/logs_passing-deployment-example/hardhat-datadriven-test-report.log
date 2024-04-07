@@ -1,0 +1,28 @@
+
+  SimpleStorage
+          ---->>>> Contents of the "expectedValue" argument: 0
+    ✔ Should start with a favorite number set by the user
+          ---->>>> Contents of the "expectedValue" argument: 18
+    ✔ Should update when we call store
+          ---->>>> Contents of the "expectedPersonName" argument: Jenny
+          ---->>>> Contents of the "expectedFavoriteNumber" argument: 8675309
+    ✔ Should work correctly with the people struct and array
+
+
+  3 passing (747ms)
+
+·-------------------------------|----------------------------|-------------|-----------------------------·
+|      Solc version: 0.8.8      ·  Optimizer enabled: false  ·  Runs: 200  ·  Block limit: 30000000 gas  │
+································|····························|·············|······························
+|  Methods                                                                                               │
+··················|·············|··············|·············|·············|···············|··············
+|  Contract       ·  Method     ·  Min         ·  Max        ·  Avg        ·  # calls      ·  usd (avg)  │
+··················|·············|··············|·············|·············|···············|··············
+|  SimpleStorage  ·  addPerson  ·           -  ·          -  ·     112407  ·            2  ·          -  │
+··················|·············|··············|·············|·············|···············|··············
+|  SimpleStorage  ·  store      ·           -  ·          -  ·      43724  ·            2  ·          -  │
+··················|·············|··············|·············|·············|···············|··············
+|  Deployments                  ·                                          ·  % of limit   ·             │
+································|··············|·············|·············|···············|··············
+|  SimpleStorage                ·           -  ·          -  ·     463804  ·        1.5 %  ·          -  │
+·-------------------------------|--------------|-------------|-------------|---------------|-------------·

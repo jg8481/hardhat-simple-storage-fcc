@@ -1,0 +1,42 @@
+
+  SimpleStorage
+
+    1) Should start with a favorite number set by the user
+          ---->>>> Contents of the "expectedValue" argument: 18
+    ✔ Should update when we call store
+          ---->>>> Contents of the "expectedPersonName" argument: Jenny
+          ---->>>> Contents of the "expectedFavoriteNumber" argument: 8675309
+    ✔ Should work correctly with the people struct and array
+
+
+  2 passing (720ms)
+  1 failing
+
+  1) SimpleStorage
+       Should start with a favorite number set by the user:
+
+      AssertionError: expected '0' to equal '10'
+      + expected - actual
+
+      -0
+      +10
+      
+      at Context.<anonymous> (test/Lesson6CodeSessions_test-deploy.js:16:12)
+
+
+
+·-------------------------------|----------------------------|-------------|-----------------------------·
+|      Solc version: 0.8.8      ·  Optimizer enabled: false  ·  Runs: 200  ·  Block limit: 30000000 gas  │
+································|····························|·············|······························
+|  Methods                                                                                               │
+··················|·············|··············|·············|·············|···············|··············
+|  Contract       ·  Method     ·  Min         ·  Max        ·  Avg        ·  # calls      ·  usd (avg)  │
+··················|·············|··············|·············|·············|···············|··············
+|  SimpleStorage  ·  addPerson  ·           -  ·          -  ·     112407  ·            2  ·          -  │
+··················|·············|··············|·············|·············|···············|··············
+|  SimpleStorage  ·  store      ·           -  ·          -  ·      43724  ·            2  ·          -  │
+··················|·············|··············|·············|·············|···············|··············
+|  Deployments                  ·                                          ·  % of limit   ·             │
+································|··············|·············|·············|···············|··············
+|  SimpleStorage                ·           -  ·          -  ·     463804  ·        1.5 %  ·          -  │
+·-------------------------------|--------------|-------------|-------------|---------------|-------------·

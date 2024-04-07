@@ -1,0 +1,324 @@
+
+BUILD STAGE 1 :: INSTALL THE REQUIRED TOOLS
+
+[3J[H[2J
+------------------------------------[[[[ Install-Tools-On-MacOS-Or-Linux ]]]]------------------------------------
+
+This command will install all of the required Node.js packages. This script was created on MacOS, but can be used in any Linux Distro that has curl installed. This run started on Sun Apr  7 14:09:59 EDT 2024.
+
+=> nvm is already installed in /Users/jgorospe/.nvm, trying to update using git
+=> => Compressing and cleaning up git repository
+
+=> nvm source string already in /Users/jgorospe/.bashrc
+=> bash_completion source string already in /Users/jgorospe/.bashrc
+=> Close and reopen your terminal to start using nvm or run the following to use it now:
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+Now using node v18.20.1 (npm v10.5.1)
+Now using node v18.20.1 (npm v10.5.1)
+[0;32mdefault[0m [0;90m->[0m [0;32m18[0m ([0;90m->[0m [0;32mv18.20.1[0m)
+v18.20.1
+yarn info v1.22.22
+Done in 0.99s.
+yarn install v1.22.22
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.51s.
+yarn run v1.22.22
+$ /Users/jgorospe/Documents/GitHub/hardhat-simple-storage-fcc/node_modules/.bin/hardhat
+Hardhat version 2.22.2
+
+Usage: hardhat [GLOBAL OPTIONS] [SCOPE] <TASK> [TASK OPTIONS]
+
+GLOBAL OPTIONS:
+
+  --config           	A Hardhat config file. 
+  --emoji            	Use emoji in messages. 
+  --flamegraph       	Generate a flamegraph of your Hardhat tasks 
+  --help             	Shows this message, or a task's help if its name is provided 
+  --max-memory       	The maximum amount of memory that Hardhat can use. 
+  --network          	The network to connect to. 
+  --show-stack-traces	Show stack traces (always enabled on CI servers). 
+  --tsconfig         	A TypeScript config file. 
+  --typecheck        	Enable TypeScript type-checking of your scripts/tests 
+  --verbose          	Enables Hardhat verbose logging 
+  --version          	Shows hardhat's version. 
+
+
+AVAILABLE TASKS:
+
+  block-number       	Prints the current block number
+  check              	Check whatever you need
+  clean              	Clears the cache and deletes all artifacts
+  compile            	Compiles the entire project, building all artifacts
+  console            	Opens a hardhat console
+  coverage           	Generates a code coverage report for tests
+  flatten            	Flattens and prints contracts and their dependencies. If no file is passed, all the contracts in the project will be flattened.
+  gas-reporter:merge 	
+  help               	Prints this message
+  node               	Starts a JSON-RPC server on top of Hardhat Network
+  run                	Runs a user-defined script after compiling the project
+  test               	Runs mocha tests
+  verify             	Verifies a contract on Etherscan or Sourcify
+
+
+AVAILABLE TASK SCOPES:
+
+  vars               	Manage your configuration variables
+
+To get help for a specific task run: npx hardhat help [SCOPE] <TASK>
+
+Done in 1.27s.
+
+
+This run ended on Sun Apr  7 14:10:52 EDT 2024.
+
+
+------------------------------------[[[[ Tool Runner Script ]]]]------------------------------------
+
+
+This tool runner script can be used to run the following commands to deploy the Solidity examples from the Patrick Collins FCC Solidity YouTube course.
+
+You can view just this help menu again (without triggering any automation) by running 'bash ./Lesson6CodeSessions_start-deployment-scripts.sh -h' or 'bash ./Lesson6CodeSessions_start-deployment-scripts.sh -h --help'.
+
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes-Clean-Environment
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Install-Tools-On-MacOS-Or-Linux
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Compile-Solidity-Code-With-Hardhat
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Default-Hardhat-Node
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Forked-Fantom-Mainnet
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Real-Ethereum-Testnet
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Datadriven-Hardhat-Test
+
+If you're running this for the first time run the following before running Start-Deployment-On-Local-Hardhat-Node.
+
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Install-Tools-On-MacOS-Or-Linux
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Compile-Solidity-Code-With-Hardhat
+
+Then you can run the following combined commands in your terminal to deploy the contract to the Ganache local blockchain node.
+
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes && bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Hardhat-Node
+
+You can also use the provided Lesson6CodeSessions_start-automation-build-pipeline.sh to run all the above commands in a sequence similar to a build pipeline.
+
+bash ./Lesson6CodeSessions_start-automation-build-pipeline.sh
+
+
+
+BUILD STAGE 2 :: COMPILE THE SOLIDITY CODE AND CHECK BUILD ARTIFACTS
+
+[3J[H[2J
+------------------------------------[[[[ Compile-Solidity-Code-With-Hardhat ]]]]------------------------------------
+
+This command will run the Compile-Solidity-Code-With-Hardhat script. This run started on Sun Apr  7 14:10:54 EDT 2024.
+
+Compiled 1 Solidity file successfully (evm target: london).
+
+
+This run ended on Sun Apr  7 14:11:00 EDT 2024.
+
+
+------------------------------------[[[[ Tool Runner Script ]]]]------------------------------------
+
+
+This tool runner script can be used to run the following commands to deploy the Solidity examples from the Patrick Collins FCC Solidity YouTube course.
+
+You can view just this help menu again (without triggering any automation) by running 'bash ./Lesson6CodeSessions_start-deployment-scripts.sh -h' or 'bash ./Lesson6CodeSessions_start-deployment-scripts.sh -h --help'.
+
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes-Clean-Environment
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Install-Tools-On-MacOS-Or-Linux
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Compile-Solidity-Code-With-Hardhat
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Default-Hardhat-Node
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Forked-Fantom-Mainnet
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Real-Ethereum-Testnet
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Datadriven-Hardhat-Test
+
+If you're running this for the first time run the following before running Start-Deployment-On-Local-Hardhat-Node.
+
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Install-Tools-On-MacOS-Or-Linux
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Compile-Solidity-Code-With-Hardhat
+
+Then you can run the following combined commands in your terminal to deploy the contract to the Ganache local blockchain node.
+
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes && bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Hardhat-Node
+
+You can also use the provided Lesson6CodeSessions_start-automation-build-pipeline.sh to run all the above commands in a sequence similar to a build pipeline.
+
+bash ./Lesson6CodeSessions_start-automation-build-pipeline.sh
+
+
+
+BUILD STAGE 3 :: DEPLOY THE SMART CONTRACT(S) TO A LOCAL BLOCKCHAIN NODE
+
+[3J[H[2J
+------------------------------------[[[[ Start-Deployment-On-Local-Default-Hardhat-Node ]]]]------------------------------------
+
+This command will run the Start-Deployment-On-Local-Default-Hardhat-Node script. This run started on Sun Apr  7 14:11:02 EDT 2024.
+
+
+
+-------->>>> Deployment Results Log :: Start-Deployment-On-Local-Default-Hardhat-Node <<<<--------
+Deploying contract...
+Current Value is: 0
+Updated Value is: 7
+
+
+This run ended on Sun Apr  7 14:11:18 EDT 2024.
+
+
+------------------------------------[[[[ Tool Runner Script ]]]]------------------------------------
+
+
+This tool runner script can be used to run the following commands to deploy the Solidity examples from the Patrick Collins FCC Solidity YouTube course.
+
+You can view just this help menu again (without triggering any automation) by running 'bash ./Lesson6CodeSessions_start-deployment-scripts.sh -h' or 'bash ./Lesson6CodeSessions_start-deployment-scripts.sh -h --help'.
+
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes-Clean-Environment
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Install-Tools-On-MacOS-Or-Linux
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Compile-Solidity-Code-With-Hardhat
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Default-Hardhat-Node
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Forked-Fantom-Mainnet
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Real-Ethereum-Testnet
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Datadriven-Hardhat-Test
+
+If you're running this for the first time run the following before running Start-Deployment-On-Local-Hardhat-Node.
+
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Install-Tools-On-MacOS-Or-Linux
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Compile-Solidity-Code-With-Hardhat
+
+Then you can run the following combined commands in your terminal to deploy the contract to the Ganache local blockchain node.
+
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes && bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Hardhat-Node
+
+You can also use the provided Lesson6CodeSessions_start-automation-build-pipeline.sh to run all the above commands in a sequence similar to a build pipeline.
+
+bash ./Lesson6CodeSessions_start-automation-build-pipeline.sh
+
+
+
+BUILD STAGE 4 :: TEST THE DEPLOYED SMART CONTRACT(S) ON A LOCAL BLOCKCHAIN NODE
+
+[3J[H[2J
+------------------------------------[[[[ Start-Datadriven-Hardhat-Test ]]]]------------------------------------
+
+This command will run the Start-Datadriven-Hardhat-Test script. This run started on Sun Apr  7 14:11:20 EDT 2024.
+
+
+  SimpleStorage
+          ---->>>> Contents of the "expectedValue" argument: 0
+    ✔ Should start with a favorite number set by the user
+          ---->>>> Contents of the "expectedValue" argument: 18
+    ✔ Should update when we call store
+          ---->>>> Contents of the "expectedPersonName" argument: Jenny
+          ---->>>> Contents of the "expectedFavoriteNumber" argument: 8675309
+    ✔ Should work correctly with the people struct and array
+
+
+  3 passing (747ms)
+
+·-------------------------------|----------------------------|-------------|-----------------------------·
+|      Solc version: 0.8.8      ·  Optimizer enabled: false  ·  Runs: 200  ·  Block limit: 30000000 gas  │
+································|····························|·············|······························
+|  Methods                                                                                               │
+··················|·············|··············|·············|·············|···············|··············
+|  Contract       ·  Method     ·  Min         ·  Max        ·  Avg        ·  # calls      ·  usd (avg)  │
+··················|·············|··············|·············|·············|···············|··············
+|  SimpleStorage  ·  addPerson  ·           -  ·          -  ·     112407  ·            2  ·          -  │
+··················|·············|··············|·············|·············|···············|··············
+|  SimpleStorage  ·  store      ·           -  ·          -  ·      43724  ·            2  ·          -  │
+··················|·············|··············|·············|·············|···············|··············
+|  Deployments                  ·                                          ·  % of limit   ·             │
+································|··············|·············|·············|···············|··············
+|  SimpleStorage                ·           -  ·          -  ·     463804  ·        1.5 %  ·          -  │
+·-------------------------------|--------------|-------------|-------------|---------------|-------------·
+
+This run ended on Sun Apr  7 14:11:28 EDT 2024.
+
+
+------------------------------------[[[[ Tool Runner Script ]]]]------------------------------------
+
+
+This tool runner script can be used to run the following commands to deploy the Solidity examples from the Patrick Collins FCC Solidity YouTube course.
+
+You can view just this help menu again (without triggering any automation) by running 'bash ./Lesson6CodeSessions_start-deployment-scripts.sh -h' or 'bash ./Lesson6CodeSessions_start-deployment-scripts.sh -h --help'.
+
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes-Clean-Environment
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Install-Tools-On-MacOS-Or-Linux
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Compile-Solidity-Code-With-Hardhat
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Default-Hardhat-Node
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Forked-Fantom-Mainnet
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Real-Ethereum-Testnet
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Datadriven-Hardhat-Test
+
+If you're running this for the first time run the following before running Start-Deployment-On-Local-Hardhat-Node.
+
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Install-Tools-On-MacOS-Or-Linux
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Compile-Solidity-Code-With-Hardhat
+
+Then you can run the following combined commands in your terminal to deploy the contract to the Ganache local blockchain node.
+
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes && bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Hardhat-Node
+
+You can also use the provided Lesson6CodeSessions_start-automation-build-pipeline.sh to run all the above commands in a sequence similar to a build pipeline.
+
+bash ./Lesson6CodeSessions_start-automation-build-pipeline.sh
+
+
+
+
+
+ALL TESTS PASSED. DEPLOYMENT TO THE ETHEREUM TESTNET WILL CONTINUE.
+
+
+BUILD STAGE 5 :: DEPLOY THE SMART CONTRACT(S) TO ETHEREUM TESTNET
+
+[3J[H[2J
+------------------------------------[[[[ Start-Deployment-On-Real-Ethereum-Testnet ]]]]------------------------------------
+
+This command will run the Start-Deployment-On-Real-Ethereum-Testnet script. This run started on Sun Apr  7 14:11:30 EDT 2024.
+
+
+
+-------->>>> Deployment Results Log :: Start-Deployment-On-Real-Ethereum-Testnet :: Sepolia <<<<--------
+Deploying contract...
+Waiting for block confirmations...
+Current Value is: 0
+Updated Value is: 7
+
+
+This run ended on Sun Apr  7 14:12:05 EDT 2024.
+
+
+------------------------------------[[[[ Tool Runner Script ]]]]------------------------------------
+
+
+This tool runner script can be used to run the following commands to deploy the Solidity examples from the Patrick Collins FCC Solidity YouTube course.
+
+You can view just this help menu again (without triggering any automation) by running 'bash ./Lesson6CodeSessions_start-deployment-scripts.sh -h' or 'bash ./Lesson6CodeSessions_start-deployment-scripts.sh -h --help'.
+
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes-Clean-Environment
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Install-Tools-On-MacOS-Or-Linux
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Compile-Solidity-Code-With-Hardhat
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Default-Hardhat-Node
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Forked-Fantom-Mainnet
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Real-Ethereum-Testnet
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Datadriven-Hardhat-Test
+
+If you're running this for the first time run the following before running Start-Deployment-On-Local-Hardhat-Node.
+
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Install-Tools-On-MacOS-Or-Linux
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Compile-Solidity-Code-With-Hardhat
+
+Then you can run the following combined commands in your terminal to deploy the contract to the Ganache local blockchain node.
+
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes && bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Hardhat-Node
+
+You can also use the provided Lesson6CodeSessions_start-automation-build-pipeline.sh to run all the above commands in a sequence similar to a build pipeline.
+
+bash ./Lesson6CodeSessions_start-automation-build-pipeline.sh
+
+
+
+This automation build pipeline run ended on Sun Apr  7 14:09:55 EDT 2024.
+
