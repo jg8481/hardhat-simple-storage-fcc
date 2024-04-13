@@ -16,3 +16,34 @@ Build pipeline failure example:
 
 Here is one of several contracts I deployed with this build pipeline to Sepolia Testnet using my own Alchemy Sepolia Testnet RPC.
   - https://sepolia.etherscan.io/address/0x283dc8314ff2b950ec4bf2b6dcfdbb1c67bca073
+
+---
+### Technical Requirements
+
+Check the basic technical requirements from Patrick's original GitHub repo. For convenience, MacOS users can run `bash ./Lesson6CodeSessions_start-deployment-scripts.sh Install-Tools-On-MacOS-Or-Linux` from the root of this repo to help quickly install the required tools.
+
+### Quick Start Script
+
+After the basic technical requirements are installed and working, then you can run the `bash ./Lesson6CodeSessions_start-automation-build-pipeline.sh` script. This automation script will start a sequence of the scripts listed below, and is meant to behave like a typical build pipeline.
+
+### Current Toolkit Capabilities
+```
+You can view just this help menu again (without triggering any automation) by running 'bash ./Lesson6CodeSessions_start-deployment-scripts.sh -h' or 'bash ./Lesson6CodeSessions_start-deployment-scripts.sh -h --help'.
+
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes-Clean-Environment
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Install-Tools-On-MacOS-Or-Linux
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Compile-Solidity-Code-With-Hardhat
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Default-Hardhat-Node
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Forked-Fantom-Mainnet
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Real-Ethereum-Testnet
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Datadriven-Hardhat-Test
+
+If you're running this for the first time run the following before running Start-Deployment-On-Local-Hardhat-Node.
+
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Install-Tools-On-MacOS-Or-Linux
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Compile-Solidity-Code-With-Hardhat
+
+Then you can run the following combined commands in your terminal to deploy the contract to the Ganache local blockchain node.
+
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes && bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Hardhat-Node
+```
