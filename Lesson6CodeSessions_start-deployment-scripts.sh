@@ -188,7 +188,7 @@ usage_explanation() {
   echo "bash ./Lesson6CodeSessions_start-deployment-scripts.sh Install-Tools-On-MacOS-Or-Linux"
   echo "bash ./Lesson6CodeSessions_start-deployment-scripts.sh Compile-Solidity-Code-With-Hardhat"
   echo
-  echo "Then you can run the following combined commands in your terminal to deploy the contract to the Ganache local blockchain node."
+  echo "Then you can run the following combined commands in your terminal to deploy the contract to the Hardhat local blockchain node."
   echo
   echo "bash ./Lesson6CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes && bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Default-Hardhat-Node"
   echo
