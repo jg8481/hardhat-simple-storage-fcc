@@ -45,5 +45,5 @@ bash ./Lesson6CodeSessions_start-deployment-scripts.sh Compile-Solidity-Code-Wit
 
 Then you can run the following combined commands in your terminal to deploy the contract to the Ganache local blockchain node.
 
-bash ./Lesson6CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes && bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Hardhat-Node
+bash ./Lesson6CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes && bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Default-Hardhat-Node
 ```
