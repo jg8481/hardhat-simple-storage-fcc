@@ -190,7 +190,7 @@ usage_explanation() {
   echo
   echo "Then you can run the following combined commands in your terminal to deploy the contract to the Ganache local blockchain node."
   echo
-  echo "bash ./Lesson6CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes && bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Hardhat-Node"
+  echo "bash ./Lesson6CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes && bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Default-Hardhat-Node"
   echo
   echo "You can also use the provided Lesson6CodeSessions_start-automation-build-pipeline.sh to run all the above commands in a sequence similar to a build pipeline."
   echo
