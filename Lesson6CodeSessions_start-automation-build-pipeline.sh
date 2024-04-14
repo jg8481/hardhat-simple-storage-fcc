@@ -33,8 +33,8 @@ sleep 2
 bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Datadriven-Hardhat-Test >> ./logs/hardhat-build-pipeline.log
 echo >> ./logs/hardhat-build-pipeline.log
 if grep --quiet "failing" ./logs/hardhat-datadriven-test-report.log; then
-	echo >> ./logs/hardhat-build-pipeline.log
-	echo >> ./logs/hardhat-build-pipeline.log
+    echo >> ./logs/hardhat-build-pipeline.log
+    echo >> ./logs/hardhat-build-pipeline.log
     echo "WARNING: TEST FAILURES WERE DETECTED! THIS AUTOMATION PIPELINE WILL FAIL AND STOP DEPLOYMENT TO THE ETHEREUM TESTNET." >> ./logs/hardhat-build-pipeline.log
     echo >> ./logs/hardhat-build-pipeline.log
     echo >> ./logs/hardhat-build-pipeline.log
