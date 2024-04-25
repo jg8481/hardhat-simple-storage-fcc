@@ -173,7 +173,7 @@ usage_explanation() {
   echo
   echo "This tool runner script can be used to run the following commands to deploy the Solidity examples from the Patrick Collins FCC Solidity YouTube course."
   echo
-  echo "You can view just this help menu again (without triggering any automation) by running 'bash ./Lesson6CodeSessions_start-deployment-scripts.sh -h' or 'bash ./Lesson6CodeSessions_start-deployment-scripts.sh -h --help'."
+  echo "You can view just this help menu again (without triggering any automation) by running 'bash ./Lesson6CodeSessions_start-deployment-scripts.sh -h' or 'bash ./Lesson6CodeSessions_start-deployment-scripts.sh --help'."
   echo
   echo "bash ./Lesson6CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes-Clean-Environment"
   echo "bash ./Lesson6CodeSessions_start-deployment-scripts.sh Install-Tools-On-MacOS-Or-Linux"
@@ -190,7 +190,7 @@ usage_explanation() {
   echo
   echo "Then you can run the following combined commands in your terminal to deploy the contract to the Hardhat local blockchain node."
   echo
-  echo "bash ./Lesson6CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes && bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Default-Hardhat-Node"
+  echo "bash ./Lesson6CodeSessions_start-deployment-scripts.sh Stop-Local-Blockchain-Nodes-Clean-Environment && bash ./Lesson6CodeSessions_start-deployment-scripts.sh Start-Deployment-On-Local-Default-Hardhat-Node"
   echo
   echo "You can also use the provided Lesson6CodeSessions_start-automation-build-pipeline.sh to run all the above commands in a sequence similar to a build pipeline."
   echo
