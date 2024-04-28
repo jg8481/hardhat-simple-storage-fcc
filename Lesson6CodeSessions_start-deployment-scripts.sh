@@ -12,7 +12,7 @@ if [ "$1" == "Stop-Local-Blockchain-Nodes-Clean-Environment" ]; then
   killall yarn > /dev/null 2>&1
   killall npm > /dev/null 2>&1
   killall node > /dev/null 2>&1
-  pkill yarnn > /dev/null 2>&1
+  pkill yarn > /dev/null 2>&1
   pkill npm > /dev/null 2>&1
   pkill node > /dev/null 2>&1
   ps aux | grep node
@@ -78,7 +78,7 @@ if [ "$1" == "Start-Deployment-On-Local-Default-Hardhat-Node" ]; then
   killall yarn > /dev/null 2>&1
   killall npm > /dev/null 2>&1
   killall node > /dev/null 2>&1
-  pkill yarnn > /dev/null 2>&1
+  pkill yarn > /dev/null 2>&1
   pkill npm > /dev/null 2>&1
   pkill node > /dev/null 2>&1
   sleep 4
@@ -105,7 +105,7 @@ if [ "$1" == "Start-Deployment-On-Local-Forked-Fantom-Mainnet" ]; then
   killall yarn > /dev/null 2>&1
   killall npm > /dev/null 2>&1
   killall node > /dev/null 2>&1
-  pkill yarnn > /dev/null 2>&1
+  pkill yarn > /dev/null 2>&1
   pkill npm > /dev/null 2>&1
   pkill node > /dev/null 2>&1
   sleep 4
@@ -132,7 +132,7 @@ if [ "$1" == "Start-Deployment-On-Real-Ethereum-Testnet" ]; then
   killall yarn > /dev/null 2>&1
   killall npm > /dev/null 2>&1
   killall node > /dev/null 2>&1
-  pkill yarnn > /dev/null 2>&1
+  pkill yarn > /dev/null 2>&1
   pkill npm > /dev/null 2>&1
   pkill node > /dev/null 2>&1
   sleep 4
