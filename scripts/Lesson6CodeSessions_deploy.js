@@ -7,7 +7,7 @@ async function main() {
   console.log("Deploying contract...")
   const simpleStorage = await SimpleStorageFactory.deploy()
 
-  // Not functionable in version 6^ ethers ----->
+  // Not working in version 6^ ethers ----->
   
   // await simpleStorage.deployed()
   // console.log(`Deployed contract to: ${simpleStorage.address}`)
@@ -19,7 +19,7 @@ async function main() {
     console.log("Waiting for block confirmations...")
     await new Promise(resolve => setTimeout(resolve, 10000)) // This will pause for a few seconds.
 
-    // Not functionable in version 6^ ethers ----->
+    // Not working in version 6^ ethers ----->
     
     // await simpleStorage.deploymentTransaction().wait(6)
     // Note from Josh: I had to disable this line above because it kept displaying an error from my terminal.
